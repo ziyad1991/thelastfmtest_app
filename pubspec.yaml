@@ -42,6 +42,8 @@ dev_dependencies:
   material_floating_search_bar: ^0.3.4
   provider: ^6.0.1
   url_launcher: ^6.0.12
+  http: ^0.13.4
+  retry: ^3.1.0
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your

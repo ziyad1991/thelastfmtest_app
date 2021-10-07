@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
 
-class AlbumScreen extends StatefulWidget {
-  @override
-  _AlbumScreenState createState() => _AlbumScreenState();
-}
-
-class _AlbumScreenState extends State<AlbumScreen> {
+class AlbumScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container();
