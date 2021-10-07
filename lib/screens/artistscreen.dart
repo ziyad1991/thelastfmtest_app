@@ -3,6 +3,7 @@ import 'package:thelastfmtest_app/provider/artistprovider.dart';
 import '../models/artist.dart';
 import '../provider/searchprovider.dart';
 import 'package:provider/provider.dart';
+import '../screens/artistdetails.dart';
 
 class ArtistScreen extends StatefulWidget {
   const ArtistScreen({Key? key}) : super(key: key);
@@ -27,7 +28,12 @@ class _ArtistScreenState extends State<ArtistScreen> {
                   return Padding(
                     padding: const EdgeInsets.all(5.0),
                     child: GestureDetector(
-                      onTap: () => null,
+                      onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) =>
+                                ArtistDetailsUI(artist: artistData.name)),
+                      ),
                       child: Card(
                         color: Colors.lightGreen.shade300,
                         child: Padding(
